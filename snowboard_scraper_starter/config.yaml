@@ -1,0 +1,20 @@
+sites:
+  burton:
+    base_url: "https://www.burton.com"
+    delay_sec: 2
+    headers:
+      user_agent: "Mozilla/5.0 (compatible; SnowboardBot/0.1)"
+    list_pages:
+      - "https://www.burton.com/us/en/c/mens-snowboards"
+    selectors:
+      product_link: ""
+      item:
+        brand: ""
+        name: ""
+        gender: ""
+        profile: ""
+        flex: ""
+        description: ""
+        terrain_blob: ""
+    # Fallback: regex that matches product pages on Burton
+    product_url_regex: "^/us/en/p/[^?#]+\\.html$"
